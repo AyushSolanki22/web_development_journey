@@ -1,0 +1,121 @@
+#Tables  in HTML
+    Tables are used to represent real life data table data 
+    <table> </table> 
+
+    see tables.html consisting of <caption> <tr> <th> <td>
+    <caption> -- table name
+    <tr> -- used to display table row
+    <th> -- used to display table header (column headers)
+    <td> -- used to display table data
+
+# semantics in table
+    <thead> to wrap table header
+    <tbody> to wrap table body
+    <tfoot> to wrap table footer 
+
+# colspan and rowspan Attributes 
+    By default, table element (th/td) is of 1 row, 1 column, but by using rowspan and colspan Attributes we can alter size
+
+    <th rowspan="2"> Item </th>
+
+# Practice_rowspan&colspan.html
+
+#Forms in HTML
+    Forms are used to collect data from user
+    <form> form content </form>  . (eg- insta login page)
+
+    Action Attribute - Action Attribute is used to define what action needs to be performed when a form is submitted
+                       or where the form data should be sent
+                       <form action="/action.php">
+                       <form action="/action">
+    
+    There are various form elements: input, 
+
+# Input Element
+    used to create multiple form controls
+    there are multiple types of inputs that can be created using type Attributes
+    It is a single tag.
+
+    <input>
+    <input type="text"> ,, <input type=password"> ,, <input type="number"> ,, <input type="time"> & more.
+
+# Placeholder Attribute & Label element
+    Placeholder- used to show some default text at input element written in light color (which works as a suggestion)
+
+                 <input type="text" placeholder="enter name">
+    
+    Label element - it represents a caption for an item in user interface (like text associated with input). Creates connection
+
+                    simple(enclosed within label) -- <label> Enter your username : <input ...> </label>
+
+                    or using for , id (classical approach)
+                    <label for="username"> Enter your username: </label> 
+                    <input type="text" id="username" placeholder="Enter username"
+
+                    id--> is unique name attribute given to a certain element to like link with label or to access Element
+                          for styling in css , we use id.
+
+# Button elements
+    Button element is a box used to submit data to url given by action attribute by default (in a form).
+     
+    type attribute: <button type="submit"> submit </button>   (by default, tyoe="submit") 
+                    <button type="button"> do something </button>
+                    <button type="reset"> reset </button> 
+
+    button using input <input type="button" value="click me">  ((Not a good practice,not advisable, though))
+                       <input type="submit" --> by default , Submit will appear to be written on button
+
+# Name Attribute
+    Name of the form control. Submitted with the form as part of a name/value pair. ((url?name=value))
+    Name here is what we define, and value is the text inputted by input element
+
+    it is not compulsory, but for as for backened to access data inputted, this attribute is used.
+
+    <input type="text" placeholder="enter name" id="username" name="username">
+
+    **Application of name attribute to link to google,youtube using search urls
+
+# Practice_nameAttribute.html
+
+# Input element - Checkbox
+    <input type="checkbox" name="age" id="age" checked >
+    <label for="age"> I am 18+ </label>
+
+    if checkbox is ticked, age=on is passed, otherwise no information passed to url 
+
+# Radio 
+    a type of buttons in which one button out of all can only be selected ((in which only one option is to be selected))
+
+    To make radio buttons in a form, same name attribute is used to group them to have only one radio button selected.
+
+    As all have same name , after submitting, only name=on is passed, so to pass value with name, value attribute should also be used here.
+    So now after submtting, name=value will be passed ((name-value pair is passed in a form))
+
+    checkbox, can also be , similarly grouped, but still , multiple can be selected ((name=value & name=value like will be passed))
+
+# Dropdown (select element)
+    <select name="profession" id="profession">
+        <option> Select profession </option>   ((for to display hint,suggestion))
+        <option value="student">Student </option>
+        <option value='dev"> Developer </option>
+    </select>   
+
+    ((to get a option preselected , write selected inside option opening tag))
+    <option value='dev" selected> Developer </option>
+
+# Range 
+    to get selection in a certain range ( a input type)
+
+    <label for="volume">Volume </label>
+    <input type="range" min="0" max="100" id="volume" name="vol">
+
+    it also has step attribute to determine step while increasing, decreasing
+    to get some specific value preselected , use value attribute
+
+# Text area 
+    for like to get some text input (like to get feedback)
+
+    <label for="feedback"> Please provide your feedback: </label>
+    <textarea id="feedback" placeholder="Write your feedback"> </textarea>   ((By default, it has size of 2 rows, 5 columns ))
+
+# Practice_formElements.html

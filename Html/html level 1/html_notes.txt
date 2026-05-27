@@ -1,0 +1,101 @@
+# Introduction
+    html --> HyperText Markup Langauge --> Structure && Formatting
+
+# Html Elements & Tags
+    Standard elements that a browser recognizes --> such as paragraph, heading, image
+    Tags+Content within --> element
+    
+    Components used to design the structure of websites are called html Tags.
+    Basically, it is a container for some content or other tags.
+
+    example : <b> </b> (bold), <p> </p> 
+
+    A tag inside another tag --> nesting of tags
+
+# Paragraph Element  (<p> </p>)
+    The <p> HTML element represent a paragraph
+    A content to be displayed together
+
+    Remember : It doesn't allow spaces if given inside it. It ignores spaces 
+
+# Heading Elements  (<h1> </h1>)
+    The <h1> to <h6> html elements represent six levels of section headings. <h1> is the highest section level and <h6> is the lowest
+    All this elements have their own default size which are predefined. 
+
+# A webpage - to represent heading section, paragraph,nesting  (practice)
+    helloworld.html
+
+# Boilerplate code
+    <!DOCTYPE html>  -->(it tells browser/document HTML 5 is used)
+    html (root) --> head, body --> title,p  ((heirarchial structure))
+    
+    head tag --> it basically contains metadata info & extra info,(data about data)
+             --> it like contains linking info of css, js 
+             --> One tag like here is title (Title isn't displayed on webpage, but shown on tab above websites)
+    body tag --> it contains the main body of the code --> paras, headings, forms, tables, lists ((mainly header, footer, main, navigation)) 
+
+    ! (emmet abbreviation) --> full boilerplate code generation
+
+    <html lang="en"> --> it tells browser which language is shown on webpage
+
+
+# Lists in HTML  (<ul> </ul> && <ol> </ol>)
+    -unordered list (lists with elements with bullet points, no set sequence)
+        <ul>
+            <li> Bread </li>  (( here, ul--> unordered list, li--> list item))
+            <li> Jam </li>
+        </ul>
+
+    -ordered list (list with element with a certain order (by default - 1,2,3,...))
+        <ol type="A">   (type="A" is a attribute specifying order of list to start with A,B,...)
+            <li> Bread </li>
+            <li> Jam </li> 
+        </ol>
+
+# HTML attributes
+    Attributes are used to add more information to tag . (syntax --> a="b")
+    for eg: <html lang="en">, <ol type="A">
+
+#Anchor element  (<a> </a>)
+    used to add links on to your page 
+    <a href="https;//www.google.com"> Google </a>   (Example of absolute link)
+
+    (link is placed inside as through href attribute in opening tag)
+    (link can be relative or absolute link adress of a website)
+
+    (<a href="../../README.md"> Notes</a>) (example of relative link)
+
+#Image Element (<img>)
+    used to add image to your page  
+    this is a single tag (doesn't have closing tag like pair tags <p> </p>) ,, Another single tags --> br,hr
+     
+    <img src="image.png" alt="Random image"> 
+    (here src is source of image file, which is either relative or absolute link)
+    (alt is alternative, text to be displayed incase of image fetch error)
+
+    Also can include attributes like height, width for to set height, width of image 
+    <img src="image.png" alt="Random image" height="100px" width="200px"> 
+
+#More HTML Tags
+    1. Br tag <br>
+        used to add next line(line breaks) to your page
+        <br> is also a single tag
+
+        for eg:(can be used inside p tag to create appropriate line breaks) 
+              : <p> twinkle twinkle <br> little star <br> how i wonder <br> what u are </p> 
+    2. Bold, Italic & underline tags
+        used to highlight text in your page
+        <b> Bold </b> ,, <i> Italic </i> ,, <u> underline </u>  
+     
+#Comments
+    This is part of html code that isn't parsed, it is ignored by the browser while displaying all content.
+    <!-- This is an HTML Comment --> 
+
+    It enhances code readability, understanding to another programmar, 
+    (keyboard shortcut - ctrl+/)
+
+#Case Sensitivity 
+    HTML is not case sensitive
+
+# Practice 
+    portfolio_page.html

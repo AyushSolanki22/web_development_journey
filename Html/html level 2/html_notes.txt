@@ -1,0 +1,80 @@
+#Inline vs Block
+    @Inline 
+        Takes up only necessary width 
+        don't start from new line
+        Example-- anchor, image elements
+    @Block
+        Takes up the full-width available (whole block)
+        Starts from new line
+        Example-- heading, paragraph elements 
+
+# Div Element   (<div> </div>)
+    Div is a container used to hold other HTML elements or group elements together
+    Like in many website, we can see use of div for grouping (like google.com )
+    This grouping is done in order to seperate a group, apply some properties, 
+
+    it is a block element
+
+# Span Element  (<span> </span>)
+    (like div), span is also a generic container used to hold other HTML elements or group elements together.
+    Like in quora.com, span is used extensively
+
+    It is a Inline element
+
+#Hr tag  (<hr>)
+    Horizontal line element
+    It is used to have a Horizontal line break (a straight line) to get space between sections
+
+    example: application of hr in portfolio page to seperate sections
+
+#Sub & sup tags 
+    used to write subscripts (sub tag) & superscripts (sup tag)
+
+    <p> a <sup>2 </sup> </p>
+    <p> H <sub>2</sub>O</p> 
+    
+# Practice_sub&sup.html
+
+# Semantic Markup
+    it is the markup that relates to the meaning of content
+    makes code meaningful/structured layout, seo friendly,readable (seo- search engine optimisation)
+
+# Semantic tags 
+    <header> </header>   -- head part in webpage (grouping)
+    <main> </main>  -- consists of all main content except that of in header,footer,navigation 
+    <footer> </footer>  --bottom part in webpage
+    <nav> </nav>    -- navigation part consisting of links to other pages
+
+    (see its application on wikepedia)
+
+    <article> </article>
+    <section> </section> (like div,span)
+    <aside> </aside>  (links to related content , not directly, but indirectly, like as on wikepedia)
+
+    Remember: webpage remains same externally after writing semantics markup, only inside code, it is classified and easy to apply properties or some changes , like to a whole nav , a different colour
+
+# HTML Entities 
+    -HTML entity is a piece of text(String) that begins with an ampersand(&) and ends with semicolon.
+     (for example - &hearts; for love emoji) 
+    -used to display *reserved characters* (which would otherwise be interpreted as HTML code), and 
+     invisible characters (like non-breaking spaces)
+    -can also use in place of characters that are difficult to type with a standard keyboard (eg- emoji)
+    -browser interprets them & renders correct character
+
+    (space-- &nbsp; ,, > -- &gt; ,, < -- &lt; ,, & -- &amp; ,, " -- &quot;)
+
+    There are lot of html entities available
+
+# Emmet
+    The essential toolkit for web-developers
+    It consists of abbreviations helping in writing code fast.
+    (eg: ! for boilerplate code)
+    
+    Child(>) abbreviations for defining parent-child relaton ((html>head>title))
+    Sibling(+) abbreviations for defining sibling ((html>head+body))
+    Multiplication(*)     ((ul>li*5))
+    & more 
+
+# HTML -- included HTML Living Standard (updated HTML), along with Javascript APIs to enhance storage,multimedia, & hardware access
+
+HTML standard is a document that tells to the browser how should html work
