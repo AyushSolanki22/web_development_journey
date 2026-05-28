@@ -1,0 +1,16 @@
+h1{
+    text-align:center;
+    border: solid;
+    width:100%;  
+    
+    /* text being displayed at centre shows, it is relatively not absolutely aligned to parent element */
+}
+h2{
+    text-align: center;
+}
+h3{
+    background-color: wheat;
+}
+p{
+    color:olive;
+}

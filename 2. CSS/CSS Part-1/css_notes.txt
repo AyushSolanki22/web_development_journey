@@ -1,0 +1,144 @@
+#Introduction
+    CSS--> Cascading Style Sheets
+    It is a language that is used to describe the style of a document (webpage,website)
+    skeleton(html), css+html(a man wearing jacket(style))
+
+    Styling(CSS) is present in head of the code.
+
+# Basic Format of CSS
+    Selector,Property, Value
+    Elements to which a property(styling) to be applied is Selector
+
+    h1{
+        color:red; (((h1-->Selector, color--> Property, red--> Value)))
+    }
+
+    //Semi-colon at end is important
+
+# Includimg CSS
+    -Inline Styles
+        writing style directly inline on each Element
+        <h1 style="color:red"> Ayush Solanki </h1>
+
+        It's demerit point is that using this, we have to specify style seperately in all Elements. (like in all h1/h2 elements seperately)
+
+    -Using Style tag
+        Style is added using the <style> element in the same document , written inside head
+        see index.html
+
+        Note: Inline CSS overrides internal CSS(using style tag)  and even external CSS
+
+        THis way of using style tag inside head, is only applicable to elements present in the document only,not multiple documents(webpages) so it is also not feasible method 
+    
+    -External Stylesheet
+        writing CSS in a seperate document & linking it with HTML file
+        style.css
+        note: style tag is not used here
+
+        This is the much appropriate method
+
+        We write style element in css file, and for linking it to html file. we use link tag inside head
+        <link rel="stylesheet" href="style.css">
+
+        ((href="absolute path/relative path"))
+
+# Color Property
+    used to set the color of foreground
+
+    ways: color:red; color:#ffffff; color:rgb(214,214,214); & 3 more ways(systems)
+
+# Background Color Property
+    used to set color of the Background
+
+    ways: backround-color:purple; " " " " similar like color
+
+# Practice1 ((color,background color, external CSS))
+
+# Color Systems
+    -Named colors
+        color=black;
+
+        Each browser recognizes around 140-150 named colors. (Eg- red,magenta,maroon,teal,olive etc.)
+    
+    -RGB 
+        Red Green Blue (Color mix concept)  (all on 0-255 scale ) --> millions of color making possible
+
+        yellow: (255,255,0),, black=(0,0,0),, white=(255,255,255),, purple=(120,0,120)
+
+        practically, has many applications 
+        color picker, for different colors, give corresponding rgb values
+
+    -Hexadecimal or Hex  (Hexcode)
+        Letters: 0,1,..9,A,B,C,D,E,F
+
+        it is a one form of rgb format (#+6letters) (First 2 letters--> R, next 2--> G, last 2--> B)
+        It is a compact system
+
+        R: 0--255, hexcode: 00--ff
+
+        yellow: #ffff00, purple: #ff00ff
+        color picker, for different colors, also give corresponding hexcode
+
+# Text Properties  
+    text-align, font-weight, text-decoration, line-height, letter-spacing, font-size
+
+    -text-align 
+        this property gives alignment to text wrt parent element
+        text-align: left/start,right/end, centre, justify 
+
+        start,end was introduced to support multiple languages (like in arabic, start is from right ,end is to left)
+
+# Font-weight & Text decoration
+    -Font weight
+        it is used to determine how much light or bold text will be
+        font-weight:normal //400, font-weight:bold //700, font-weight:100, font-weight:bolder, font-weight:lighter
+
+        In the range (100-900)
+
+        //heading elements are always bold
+    
+
+    -text decoration
+        sets the appearance of decorative lines on text ,, like underline, overline, line-through
+
+        text-decoration: underline ,/overline ,/line-through
+        
+        also--> text-decoration: red underline;        (text-decoration-color)
+        or --> text-decoration: wavy/double red underline;    (text-decoration-style)
+
+        text-decoration:none (as for like removing default blue underline with anchor tag)
+
+# Line-height & Letter Spacing
+    -Line-height
+        controls the height of the line of text
+
+        line-height: normal ,, line-height: 2.5  (2.5*normal)
+        other units: (em, %, px)
+
+    - letter-spacing
+        controls the horizontal spacing behaviour between text characters 
+
+        letter-spacing: normal; or letter-spacing: 2px;
+
+# Font-size units in CSS
+    absolute-- px,   pt,pc,cm,mm,in
+    relative- %,em,rem,  ch,vh,vw+many more
+
+    -pixels(px)
+        most commonly used absolute unit
+        96px= 1 inch
+        not suitable for responsive websites
+
+        font-size: 20px;
+
+
+# Font Family
+    (type of font)
+    specifies a prioritized list of one or more font family names;
+
+    font-family=arial;
+    font-family=avant garde,didot, sans-serif; ((font families after avant garde is backup family of fonts)) (incase if one is unavailable, another would be displayed)
+    
+    //to use font-family with spaced name , quotes is used
+
+# Practice2 (design of logo)
