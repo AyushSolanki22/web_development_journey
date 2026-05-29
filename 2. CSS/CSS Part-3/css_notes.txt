@@ -1,0 +1,92 @@
+# Box Model in CSS
+    (height,width,border,padding,margin)
+    --all html elements are in box-form in a browser
+
+# Height & Width
+    --Height
+        By default, it sets the content area height of the element
+        div{
+            height:100px;
+        }
+    
+    --Weight
+        By default, it sets the content area width of the element
+        div{
+            width:300px;
+        }
+        
+    
+# Border
+    used to set an element's border
+    border-width, border-style, border-color
+
+    we can also write all 3 things in a single line  (border shorthand : width|style|color) 
+
+    --border sides
+        to control an individual side of the box   
+        border-left, border-right, border-top, border-bottom;
+
+        border-left-width, ... (OR border-left: shorthand)
+
+    
+# Border Radius
+    used to round the corners of an element's outer border edge
+
+    border-radius: 50px  OR border-radius: 50%;
+
+    different types of borders can be made: mdn 
+
+# Padding Property
+    Padding is the space inside an element, between the content and its border.
+    
+    padding-left, padding-right, padding-top, padding-bottom
+
+
+    Padding shorthand(4): for all sides(padding: 50px), top&bottom | left&right(padding: 1px 2px), top | left&right | bottom, top|right|bottom|left (clockwise)
+
+    ((by default, padding increases the total size of the element: the content area is still same to that of original))
+
+
+# Margin
+    to set spacing on the outside of border
+
+    margin-left, margin-right, margin-top, margin-bottom
+
+    Margin shorthand(4) : Same as that of padding
+
+
+# Practice Question (Traffic light using CSS)
+
+
+# Display Property
+    it sets whether an element is treated as a block or inline element and the layout used for its children
+    (whether it may be inline or not, be block or not)
+    display:inline , display:block & many more    
+
+    see display.html, display.css, & display.png
+    many styling properties are not appplied to inline element like height,width (as shown in display.html & css by divs) , to make the properties still applied on inline, make display to inline-block
+
+    display: inline-block makes element styling like block, but behaviour still like inline(donot start from new line)
+
+    to make a element disappear, apply display: none;
+
+
+# Relative Units in CSS
+    -Percentages (%)
+        it is often used to size as Relative to an element's parent object
+
+        eg- width:33%   //relative to the parent
+        margin-left: 50%  //relative to the parent size(height/width)
+
+        see display.html
+
+
+# em & rem Units
+    --em 
+        relative to font size of the parent, in the case of typographical properties(text) like font-size & font-size of the elemenet itself, in the case of 
+        properties like width,padding,margin
+
+    //drawback of em -- snowball effect in nested elements
+
+    --rem (root em)
+        relative to font-size of the root elemenet

@@ -1,0 +1,34 @@
+h1{
+    display: inline;
+    background-color: pink;
+}
+span{
+    display: block;
+    background-color: green;
+}
+
+div{
+    height: 200px;
+    width: 200px;
+    background-color: wheat;
+    border: 2px solid black;
+    margin: 10px;   
+    /* Till here, CSS Properties will be applied, as it being a block element */
+    /* display: inline;  */
+    /* this inline display would lead divs to form repeating black line */
+    display: inline-block ;
+
+}
+
+#outer{
+    height: 400px;
+    width:400px;
+    background-color: pink;
+    margin: 50px;
+}
+#inner{
+    height: 100px;
+    width: 100px;
+    background-color: cornflowerblue;
+    margin-left: 10% ;
+}
