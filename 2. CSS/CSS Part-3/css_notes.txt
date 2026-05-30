@@ -34,7 +34,10 @@
 
     border-radius: 50px  OR border-radius: 50%;
 
+    shorhand: top-left|top-right|bottom-right|bottom-left ((clockwise))
+
     different types of borders can be made: mdn 
+
 
 # Padding Property
     Padding is the space inside an element, between the content and its border.
