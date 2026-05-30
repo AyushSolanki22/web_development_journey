@@ -1,0 +1,106 @@
+//Whole part is based on Flexbox & Its properties
+
+# Flexbox
+    (Flexible Box layout)
+    It is a one-dimensional layout method for arranging items in rows or columns
+
+    //it helps in creating Responsive websites(display the layout as required, Flexible to screen size), not fixed layout (like Wikipedia)
+
+    --flex model (main axis, cross axis) (for direction=row, main axis-> horizontal, cross axis--> vertical)  
+    
+# Display flex 
+    To give element flexbox properties, we do --> display:flex;
+    Then, container-- flex container, element present within-- flex items
+
+    by default, flex-direction: row ((elements will be arranged in a row))
+
+
+# Flex direction
+    it sets how flex items are placed in the flex container , along with which axis and direction
+    
+    flex-direction: row; (left to right) OR flex-direction: row-reverse (right to left)
+    flex-direction: column; (top to bottom)  OR  flex-direction: column-reverse (bottom to top)
+
+
+# Justify Content
+    tells how the browser distributes space between and around content items along the main-axis.
+
+    justify-content: flex-start;  justify-content: flex-end; justify-content: center; 
+    (as per start, end, they get aligned to ,,, like flex-end : makes content align/stick to left side in case of row-reverse)
+
+    justify-content: space-between : makes the container empty space to be distributed between all the elements
+    justify-content-space-around:  do work of space-between+ distributes middle space at the start,end of flex items too
+    justify-content-space-evenly : do work of space-around but distributed space is maintained equal to middle space
+
+
+# Flex Wrap
+    sets whether flex items are forced onto one line (defaualt) OR can wrap onto multiple lines
+    
+    flex-wrap: nowrap;(by default)  flex-wrap: wrap;  flex-wrap: wrap-reverse;
+
+    wrap-reverse: reverse direction of cross-axis (elements as in cross-axis direction get reversed)
+
+
+# Align Items    (like justify-content(items), just applied on cross axis)
+    distributes our items along the cross axis 
+
+    align-items: flex-start;  align-items: flex-end;  align-items: center;
+
+    align-items: baseline  --> it makes the elements arranged in a way that content appears at same line(base) (incase of the elements within flex are of unequal size)
+
+
+# Align Content (like justify-content, just applied on cross axis & used incase of multiple flex line when wrapping occurs)
+    it sets the distribution of space between and around content items along a flexbox's cross axis.
+
+    align-content: flex-start/flex-end/center
+    align-content: space-between/space-around/evenly
+    align-content: baseline;
+
+
+# Align Self
+    till now aligning was done on a container to all items ,
+    but Align Self --> aligns an individual item along the cross-axis
+
+    align-self: flex-start/flex-end/center/baseline;
+
+    align-self > align-items
+
+
+# Flex Sizing
+    features enabling to help flex item size grow/shink incase of spaces available
+
+    -flex basis
+        it sets the initial main size of a individual flex item.
+
+        flex-basis: 100px;   (if row--> width,  if column--> height)
+
+    -flex grow
+        it specifies how much of the flex container's remaining space should be assigned to the flex item's main size.
+
+        flex-grow:1;  ((1 times))
+
+    min:width, max-width
+
+    -flex shrink ((required incase of overflow))
+        it sets the flex shrink factor of a flex item
+
+        flex-shrink:1;
+
+
+# Flex shorthand (4)
+    1. flex-grow | flex-shrink | flex-basis
+        flex: 2 2 100px
+
+    2. flex-grow | flex-basis
+        flex: 2 100px
+    
+    3. flex-grow(unitless)
+        flex:2;
+
+    4. flex-basis
+        flex:100px;
+
+
+
+
+
