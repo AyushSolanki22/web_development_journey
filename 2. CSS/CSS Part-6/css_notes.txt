@@ -1,0 +1,159 @@
+# CSS Grid
+    setting a container's display to grid will make all children grid items.
+    container{
+        display: grid;
+    }
+
+    (in this, by default, items are arranged vertically)
+
+    CSS Grid is very similar to flexbox, just difference in direction(grid is 2D).
+    Also Flexbox is used extensively, Grid has specific purposes only
+
+    Note: Grid is a block element , to make it inline incase , use display: inline-grid
+
+# Grid Model
+    (Layout is in 2D form)
+    row lines, column lines
+
+    Grid lines (lines in a grid), Grid cell (a cell bounded by row+col(grid) lines), Grid Track (distance between grid lines)
+
+
+# Grid Template
+    they define the lines & track sizing
+    ((no. of lines = no. of tracks+1))
+
+    grid-template-rows: 100px 100px 100px;   (By defining track sizing , no. of t+1 lines are defined, for no. of t+1 grid items) ((see grid.png)tracks for left elements if any, distributes space available in the container to them or elements' row shows up out of the container, )
+    grid-template-columns:  (same as of rows )
+
+    grid-template-columns: can also be given value by using auto ,,1 times auto--1 column filling space that is required. 2 times auto distributes all space between 2 columns , and so on for 3 ,4 times.
+    auto is generally not recommended as in some cases, it donot distributes equal space, it is dependent on content present within an elements
+
+    Items are thus then arranged automatically row and column wise (matrix form)
+
+
+# Grid Template (repeat )    (way better than auto)
+    repeat is used to divide all available space
+    
+    grid-template-rows: repeat(count,1fr)   (1fr means 1 fraction of 100% width/available space,  count-no. of tracks/rows we want)
+    grid-template-rows: repeat(4,1fr) OR grid-template-rows: 1fr 1 fr 1fr 1fr;
+
+    using only grid-template-rows with repeat will bring disrepancies (which is unwanted- for example, 4 rows used in repeat will get equal spaces division, but still 5th will lie inside container getting a very ltitle space), so as for 1D layout, using flexbox is better.
+    For 2D layout(rows+columns) we use Grid
+
+
+# Grid Gaps
+    they define all the gaps between the lines
+    
+    row-gap:10px ,,, column-gap:10px ,,, grid-gap: rowGap columnGap
+
+
+# Grid Columns
+    deifne an  item's starting & ending position inside the columns
+    
+    grid-column-start: line_number;
+    grid-column-end: line_number;
+    OR 
+    grid-column: start_col/end_col;
+    grid-column: start_col/span number   (span number--> no. of boxes wanted starting from start_col)
+
+# Grid Rows (same like grid columns)
+    deifne an  item's starting & ending position inside the rows
+    
+    grid-row-start: line_number;
+    OR 
+    grid-row: start_row/end_row;
+    grid-row: start_col/span number   (span number--> no. of boxes wanted starting from start_row )
+    grid-row-end: line_number;
+
+
+# Grid Properties
+    --horizontal
+        justify-items (container)
+        justify-self  (item)
+
+    --vertical
+        align-items  (container)
+        align-self   (item)
+
+    --for both (horizontal & vertical)
+        place-items   (container)
+        place-self    (item)
+
+
+
+# CSS Animations (similar like transition but it provides extra control )
+    To animate CSS elements
+
+    @keyframe myName {              //blueprint for Animation        ((myName can be any name given to Animation from state A to state B))
+        from{font-size : 20px;} 
+        to{font-size: 40px;}
+    }
+
+    //Implementation is by providing duration, delay, timimg-function, animation-iteration-count(how many times animation should be displayed), animation-direction (normal/reverse/alternate)
+
+
+# Animation shorthand
+    animation: myName 2s linear 3s infinte normal
+
+    (name, duration, timimg function, delay, iteration, direction)
+
+    Note: in from & to, we can change multiple things (like for eg- changing color, width, border-radius simultaneously)
+
+
+# % in Animation
+    to introduce stages in a animation, we can use %
+
+    @keyframe myName{
+        0% {font-size:20px;}
+        50% {font-size:30px;}
+        1005 {font-size: 40px;}
+    }
+    //for example- changing color in stages
+
+
+# Media Queries
+    helps create a responsive website (display of website as per device screen , or features such as landscape)
+    (can be checked by device mode in inspect feature)
+
+    device/environment(media) has features like width, height, orientation.
+
+    --media features- width(of viewport)
+        @media(width:400px){                   //when width==400px (rarely used)
+            div{
+                background-color: red;
+            }
+        }
+
+        @media(min-width/max-width: 400px){      //commonly used
+        }
+
+        //clubbing
+        @media(min-width:200px)and(max-width:300px){
+
+        }
+
+
+# Media Queries (orientation)
+    orientation(of viewport)
+        @media(orientation:landscape){
+            div{
+                background-color:red; 
+            }
+        }
+
+    
+# Create a  Pet Adoption Page (responsive)
+    see petAdoption.html
+
+
+# z-index
+    it decides the stack-level of elements incase of Overlapping (which will appear above, which will appear below)
+
+    Overlapping elements with a larger z-index cover those with a smaller one
+    
+    By default, element whose Properties is defined last, in case of Overlapping, appears above
+
+
+    z-index: auto(0)  OR z-index: 1/2 or -1/-2
+
+    Note: z-index is not applicable for elements having position static or default
