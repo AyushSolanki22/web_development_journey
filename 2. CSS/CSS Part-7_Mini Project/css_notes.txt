@@ -1,0 +1,58 @@
+# Basic Design Principles 
+        for better looking websites (better UI Design--> attract users,more use)
+
+        --color, --typography
+
+        --Color Theory
+            color wheel (primary colors-red,green,blue)
+
+            meaning of colors, their application   (like as yellow color is bright, noticeable, it is used extensively for advertisements & like black, gray & white color provides luxury/premium look to the website)
+
+            colors, as per their interpretation gives deeper meaning somewhat to the users , helping in attraction & trust. 
+            for eg- In razorpay, use of blue color for stability & reality. In netflix, use of red for excitement
+
+
+            subtle color combination - Monochromatic (using a light color, and its lighter shades for a light look)   
+            impactful color combination - Complementary (using dark colors, and such similar for a impactful look) 
+            high contrast combination - Triadic 
+
+            canva color wheel for to analyse combinations and color look on websites
+
+
+# Typography
+    Style & Appearance of text
+    
+    Font families - sans-serif, serif, monospace, cursive, fantasy. 
+
+    To maintain professional look , unless to make webpage graphical, we use maximum of 2 fonts in a section 
+
+
+# Google Fonts
+    https://fonts.google.com  (library of fonts - 1513 different fonts available)
+
+    We can use google fonts extensively in a webpage (using a link to be written inside head, and one css style in css file)
+
+
+# Icons
+    Icons are small graphical symbols that represent actions or objects
+
+    Below two are one of the most popular icon libraries providing thousand of ready-made icons in free.
+    Font Awesome https://fontawesome.com/   OR https://cdnjs.com/libraries/font-awesome
+    Google Icons https://fonts.google.com/icons
+
+
+
+# Project-Introduction   (CSS glassmorphism Sidebar Navigation Menu)
+    see starter in project.html
+
+# Setting style
+    see project.css
+
+# Sidebar menu
+    see project.css
+
+# Hover Changes
+    see project.css
+
+# Configuring Checkbox :: Working of side bar menu
+    see project.css 
