@@ -42,7 +42,7 @@
 
 
 
-# Project-Introduction   (CSS glassmorphism Sidebar Navigation Menu)
+# Project-Introduction   (glassmorphism Sidebar Navigation Menu)
     see starter in project.html
 
 # Setting style
