@@ -1,0 +1,116 @@
+# Bootstrap CSS
+    "Bootstrap is a powerful, feature-packed frontened toolkit. Build anything- from prototype to production - in minutes."
+    
+    CSS Framework, Toolkit - styled pre-built basic components needed frequently for CSS - buttons,forms, navbar,card etc.
+
+    getbootstrap.com  -- Bootstrap CSS Files having various pre-built components and also offering good compactibility, responsive components
+
+    @Benefits
+    - makes development faster
+    - good choice for pre-built components (have css Files)
+    - good browser compatibility 
+
+    Note : not a compulsion, if certain component & layout is good , appropriate for use, use Bootstrap, also modify if u want as modification is possible using pure CSS by writing link after bootstrap one
+
+
+# Using Bootstrap
+    using CDN Links (content delivery network) on Bootstrap of a certian component or layout css , (CDN links are also there for javascript which is written just before closing of body tag)
+     
+    cdn - a network delivering content eg- youtube content is also displayed using cdn
+
+
+    after linking, in body section , use classes meant for getting styling for various components (for eg-- class='btn' for getting button already styled by bootstrap)
+
+
+    components-- pre-built and reusable piece of user-interface (UI) .  eg-- button, forms
+    layouts -- overall structure and arrangement of the elements . eg-- container, grid
+
+
+# container (layout)
+    class container  (layout styled by the bootstrap)       (.class -- emmet abbreviation for creating div element with class="class")
+
+    Also is a responsive layout
+
+
+# button (component)
+    (base class) class="btn" ,, many different types of buttons available - class="btn btn-danger"
+
+    Also, outline buttons, button tags (even on anchor tags), sizes & a lot of features are offered
+
+
+# Badges (component)
+    <h1> Example heading <span class="badge bg-secondary">New</span> </h1>
+
+
+    Lot of various types,uses, features present
+
+
+# Alert (component)
+    class="alert"
+
+    A lot of various types, uses , features like dismissing (integrating javascript)
+
+
+# Button group (component)
+    multipled butotns stacked in a line (joint)   (margin in between is removed)
+
+
+# Navbar
+    class="navbar"
+
+    lot of types, uses, features present like collapsable menu,search bar and all
+
+
+# Card (component)
+    class="card"
+    
+    lot of types, uses, features present like collapsable menu,search bar and all
+
+
+# Grid (layout)
+    flexbox based grid
+
+    Grid system --- 12 column system.
+
+    Grid options --- by default (xs, to minimum of small width of specified container width, grid will be displayed as per column system)
+    for eg -- col-md-6
+
+
+# Columns -- Grid Vertical Alignment
+    align items (vertical alignment, in direction of cross axis)
+
+
+# Form controls in Bootstrap
+    upgraded, styled forms  
+
+    lot of types, uses, features present like collapsable menu,search bar and all
+
+# Select in forms
+    class="form-select"
+
+    lot of types, uses, features present like collapsable menu,search bar and all
+
+
+# Checkbox & radio in form
+    lot of types, uses, features present like collapsable menu,search bar and all
+    switches
+
+# Form layout
+    implementation of grid layout on forms
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
