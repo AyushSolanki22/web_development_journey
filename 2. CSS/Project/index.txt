@@ -1,0 +1,25 @@
+1. Settings up (Project understanding, inspect hack, font awesome cdn link)
+
+2. Basics (adding icon, dividing overall 3 sections, font+overall styling,overflow)
+
+3. Layout (overall layout, all sections basic layout)
+
+4. Sidebar(nav) (building layout of nav(sidebar into two parts-nav & lib,, nav subsequently into 2 parts), styling & layout of nav)
+
+5. Sidebar-lib (building layout of library part, styling)
+
+6. library boxes (building layout, styling)
+
+7. Stick nav (layout,styling in main-content)
+
+8. Cards (building layout, styling in main-content)
+
+9. Footer line (layout,styling in main-content)
+
+10. Setting up player(whole music player divided into 3 sections- album, player, controls)(mainly setting up of player & division )
+//album, controls are homework
+
+11. Player controls (full layout setup, styling)
+
+12. Playback Bar (full complete layout, +styling, layout of progress bar)
+
