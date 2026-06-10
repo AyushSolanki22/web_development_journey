@@ -1,0 +1,131 @@
+# Introduction 
+    Javascript - to provide functionality to the webpage 
+    (magical -- programming language building logic)
+    eg -- while searching, the suggestions, & while shopping, the features of adding objects to wishlist,feature of having change on a webpage due tp something, all is due to Javascript
+    
+    In this part, we will exploring javascript as a programming language, and learning basic fundamentals
+    
+
+# Using the console 
+    We will be using vs code only ahead , for using javascript (.js file)
+    
+    As a beginner, we can use console available on inspect feature on browser for writing javascript code
+    (for practice)
+    
+    Console uses REPL (read-evaluate-print-loop)
+    
+    Note : the console code cannot be saved anywhere
+
+
+#  Variable
+    It is simply the name of a storage location in a memory 
+    (data storing container)
+    
+    
+# Data Types 
+    primitive types --> number, boolean, string, undefined, null, Bigint, Symbol
+    
+    Mostly used(main) primitive types are first 5 
+    
+    typeof 'var_name' --> gives the dataType as output
+    
+    JS automatically detects the datatype, no need to specify the datatype like C,C++,Java
+
+
+# Numbers in JS
+    Positive & Negative -- Integers (14,-4)
+    Floating numbers -- with decimal (4.6, -8.8)
+    
+    Note : Unlike java , number comprises of both decimal, integers
+    
+    
+# Operations in JS
+    •operands, operators
+
+    •Addirion, Subtraction, Multiplication, Division
+    • Modulo (remainder operator ) --> 12%5=2
+    
+    • Exponentiation (power operator) --> 2**3=8
+    
+
+# NaN in JS
+    The NaN global property is a value representing Not-A-Number (invalid number)
+    
+    0/0
+    NaN-1
+    NaN*1
+    NaN+NaN
+    
+ 
+# Operator Precedence 
+    This is the general priority rule set for solving an expression 
+    
+    () 
+    **
+    *,/,%
+    +,-
+
+   
+# Assignment Operators
+    (same as that of in other languages)
+
+    age=age+1 OR age+=1
+    
+    Note: we can also declare variables using let(optional), let age=3
+
+
+# Unary Operators
+    (same as that of in other languages)
+    
+    age++ OR  age-- OR ++age OR --age ((pre-increment/decrement , post-increment/decrement))
+    
+    
+# Identifier Rules
+    (same as that of in other languages)
+    
+    let, var, const --> reserved keywords
+    JS --> case-sensitive language
+    
+    ways of writing identifiers --> camelCase (JS naming convention), snake_case, PascalCase
+
+
+# Boolean in JS 
+    boolean represents a truth value --> true or false (1 or 0)
+    
+    Note: variable dataType can be changed , not necessary need to be same always (like Java)
+    
+
+# TypeScript 
+    It is static typed, where JS is dynamic typed.(dynamic typed--> dataType can be changed)
+    Designed by Microsoft
+    
+    
+# String in JS 
+    Strings are text or sequence of characters.
+    
+    For string, we can use both double or single quotes
+    
+    to make quotes print inside a string , use single quotes in double quoted string or use double quotes in single quoted string
+    
+    
+# String indices 
+    0-based indexing (like as of in Java)
+    
+    character in string can be accessed using var_name[index] --> eg -- name[0] 
+    
+    Note: name.length --> gives length of the string (property associated with string variable)
+    
+    String concatenation (same as that in other languages)
+    
+
+# null & undefined in JS 
+    
+    undefined
+      a variable that has not been assigned a value is of type undefined. (declaring variable with let with/without value gives undefined as in output)
+      
+    null 
+      the null value represents the intentional absence of any object value. 
+      to be explicitly assigned.
+
+
+Note : Comments are written like as in Java
