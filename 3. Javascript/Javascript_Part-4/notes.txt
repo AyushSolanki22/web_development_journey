@@ -1,0 +1,47 @@
+# for loops
+    //for(let i=1; i<=5;++i) console.log(i)
+
+# loop dry run
+
+# print odd nos, print even nos
+
+# print multiplication table
+    prompt used to take input,, n=parseInt(n) to convert input (string form) into integer.
+
+# Nested for loop
+
+# while loop
+    //let i=5; 
+    //while(condition) {
+        //do something
+        i++;
+    }
+
+# favourite movie game
+
+# break keyword
+
+# loops with arrays
+    loops used to traverse arrays
+
+# nested loops with nested arrays  
+    to traverse 2D Array
+
+
+# for of loop    (like for each loop in java)
+    let fruits be 1D Array   //can also be applicable on string
+    for(fruit of fruits){
+        console.log(fruit);
+    }
+
+# Nested for of loop     //used to access, handle 2D Array simply
+
+
+# To do app(only js) 
+        list - to show all todos
+        add - to add a todo
+        delete - to delete a task
+        quit - to exit the todo
+
+        
+
