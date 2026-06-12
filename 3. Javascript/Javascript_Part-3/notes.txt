@@ -1,0 +1,146 @@
+# String methods
+    methods- actions that can be performed on objects   (functions)
+
+    format -->  stringName.method()      // like log.console(), alert()
+
+
+# trim() method
+    str.trim() --> trims whitespaces from both ends of string & return a new one.
+
+
+# String immutability
+    string is immutable --> no changes can be made to string originally
+    whenever we do try to make a change, a new string is created and old one remains stringName
+
+
+# toUpperCase & toLowerCase
+    str.toUpperCase() , str.toLowerCase() --> return a new string after changing its case 
+
+
+# String methods with arguments
+    argument is a some value that we pass to the method.
+
+    format --> stringName.method(arg)    // like indexOf
+
+    ~indexOf
+        returns the first index of occurence of some value in string. Or gives -1 if not found.
+        // str="IloveCoding"     ,,, str.indexOf("love") --> 1 
+
+
+# Method Chaining
+    using one method after another. Order of execution will be left to right.
+
+    //str.toUpperCase().trim()
+
+# Slice Method
+    returns a part of the original string as a new string
+
+    str.slice(si) OR str.slice(si,ei) OR str.slice(-num)    //ei--> exclusive **    //-num = length-num
+
+
+# Replace Method
+    searches a value in the string & returns a new string with the value replaced  //Note: only first occurence is replaced
+    //str="IloveCoding";     str.replace("love","do"); //"IdoCoding"
+
+    repeat method 
+        returns a string with the number of copies of a string
+
+        //str="Mango";    str.repeat(3) //"MangoMangoMango"
+
+
+# Array (Data Structure)
+    linear collection of things
+
+    let array=[ ]    //enclosed with square brackets
+
+
+# Visualising Array (like Java)
+    nums[index]--> accessing elements ,,, nums.length--> array length ,,, typeof nums //object
+
+    Note: mixed datatype elements also possible
+
+# Creating Array
+    //empty array //mixed array
+
+    Note: array elements can also be accessed individually
+
+
+# Arrays are Mutable
+       Arrays are mutable , unlike strings
+
+       Note: we can also like if length is 3 of array, we can initialse 10th index too, in between will be empty
+
+
+# Array Methods
+    push: add to end                       unshift: add to start
+    pop: delete from end & returns it      shift: delete from start & returns it
+
+
+    push, unshift  -- with argument
+    pop,shift      -- without argument
+
+
+# indexOf , Include method
+    indexOf: returns index of argument
+
+    includes: searches for a value  --> returns true/false
+
+
+# concatenation, reverse
+    concat: merge 2 arrays   //primary.concat(secondary)
+
+    reverse: reverse an array  //primary.reverse()   Note: it reverses original array
+
+
+# Slice in array
+    slice: returns a copy of a portion of an array
+
+    same arguments, working like as in strings
+
+    array.slice() --> returns whole array
+
+
+# splice method
+    splice: removes/replaces/add elements in place    //like all in one tool
+
+    splice(start, delCount, item0...itemN)    //3 parameters
+
+
+    //array.splice(4) --> deletes all items after starting in original array (removes)
+
+
+# Sort in Arrays
+    sort: sort an array       //arrays.sort()
+
+    arranges elements in ascending & descending order
+
+    Note: it doesn't work as expected/desired on numbers  //this is, as js internally converts them to string & sort 
+
+
+# Array references
+    references-- address in memory
+
+    //[1]===[1] ,, [1]==[1] --> both will return false
+    //whenever a array is created, ref variable is created storing addresses, the array name itself is a reference variable
+    //so when we compare two arrays , we compare ref variables, that are different ,, as addresses are different
+
+    //shallow copy, deep copy concept
+
+
+# Constant Arrays
+    const arr[]=[1,2,3,4];
+
+    but making array constant is different fromt that of variable, we can perform operations on elements of const array
+
+    //const arr makes the address constant infact
+
+
+# Nested Arrays 
+    array of arrays --> multi-dimensional arrays
+
+    //eg  -- 2D Arrays
+
+
+    
+
+
