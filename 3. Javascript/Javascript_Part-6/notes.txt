@@ -1,0 +1,79 @@
+# Functions
+    //magic button //block of code   //eg-- push(),pop() are Functions of arr, log() of console
+
+    //function definition,  function calling
+
+    function funcName (){
+        //do something
+    }
+
+    funcName();      //function calling
+
+# functions with arguments
+    arguments -- values which we pass to the function
+    
+    Note: if arguments are not passed even if written in function definition, it do not return any error. it assigns/outputs undefined value if func is called
+
+    //arguments are to be passed as in same order to that of in function definition
+
+
+# return keyword 
+    return keyword is used to return some value (output) from the function   //like slice returns a array
+
+    function funcName{
+        return val;
+    }
+
+    then we can either print (using console.log) , or assign value to any variable
+
+# Scope     
+    scope determines the accessibility of variables, objects, and functions from different parts of the code.
+
+    -function, -block, -lexical(nested functions), -global
+
+    variables defined inside a function/block are not accessible (visible) from outside the function/block
+
+    Note: block scope applies on variables declared with let, const, ,, not with var   //Note: automatically(not specified), variables are declared with var
+
+
+# Functions expressions
+    const variableName =function(arg1,arg2,...){          //nameless functions //are called by the variableName
+        //do or return something
+    }
+
+    //like the way, we update variable , we can update this too, 
+    
+    //Note:we can also change type from function to number or anything
+
+
+# Higher Order Functions
+    A function that does one or both
+        - takes one or multiple function as arguments
+        - returns a function
+
+    //eg of takes one or more func as arguments -- multiple greet function
+    //eg of returning a function  --- oddOrEvenFactory 
+
+
+#  Methods in objects
+    actions that can be performed on objects
+
+    const calculator ={                 //variable as key,,,, function as val
+        add: function(a,b){
+            return a+b;
+        };
+        sub: function(a,b){
+            return a-b;
+        };
+    }
+
+    //shorthand
+    const calculator={
+        add(a,b){
+            return a+b;
+        };
+        sub(a,b){
+            return a-b;
+        };
+    }
+
