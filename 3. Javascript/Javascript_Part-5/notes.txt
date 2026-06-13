@@ -1,0 +1,85 @@
+# Object Literals 
+    a data structure      //it is like class in  java    //Note: it's different from object (typeof arr--> object)
+
+    object Literals -- used to store keyed collections & complex entities
+
+        property => (key,value) pair                  //name , ayush --> property
+        objects are collection of properties. 
+
+
+# Creating Object Literals    //syntax  //terminated with semicolon //all key,value seperated by comma
+    let delhi={
+        latitude: "28.7041 N",
+        longitude: "77.1025 E"
+    };
+
+    Note: it do not have a correct order as declared,,  on output.
+    we can see, we can't see this much clearity in arrays  (key)
+
+    Also, if object literal declared as const, it's reference will remain fixed (address cannot be changed)
+    Also, we can include array within object literal
+
+# Creating a Post
+    create an object literal for the properties of thread/twitter post which includes:-
+        ~username
+        ~content
+        ~likes
+        ~reposts
+        ~tags
+
+
+# Get values
+    obj["keyName"];   OR  obj.keyName       //other syntax will cause error
+
+
+# Conversion in Get Values
+    JS automatically converts object keys to strings
+
+    Even if we made the number as a key, the number will be converted to string.   (implicity, not explicitly in case of [] ) (not implicitly incase of number in . )
+
+
+# Add/update value
+    obj.keyname=" "   //update value
+
+    obj.keyName       //add property
+
+    del obj.keyName   //delete property
+
+# Object of objects   (nesting)
+    //eg-- storing info of multiple students in a class
+    let classInfo={
+        aman: {
+            
+        };
+        ayush: {
+
+        };
+    }
+
+# Array of objects
+    a array consisting of multiple objects itself     //obj at every index    //syntax just like any other element just using curly bracket {} for every object
+    classInfo=[
+        {
+            name:"ayush",
+            city: "delhi"
+        },
+        {
+
+        },
+    ];
+
+
+# Math Object
+    a object consisting of all math properties & methods
+
+    properties --> Math.PI , Math.E
+
+    methods --> Math.abs(n), Math.pow(a,b), Math.floor(n), Math.ceil(n), Math.random()   (Math.random gives random value from 0 to 1 , 1 is exclusive)
+    
+
+    //floor method can be extensively used to print decimal.free number
+
+# Random integers (from 1 to 10)
+
+
+# Guessing game
