@@ -1,0 +1,64 @@
+# this keyword
+    "this" keyword refers to an object that is executing the current piece of code.
+
+    inside a func inside a object, to access objects' properties that is not accessible directly, this keyword is used.
+
+    this--> is the current object we are working within 
+    //if used outside user-defined object, this will show windows as object  --a object used to create browser window to make it displayed on browser  
+
+    //window object is default   //alert("hello") == window.alert("hello")
+
+
+# try & catch
+    the try statement allows you to define a block of code to be tested for errors while it is being executed.
+
+    the catch statement allows you to define a block of code to be executed, if an error occurs in the try block.
+
+    //helpful in website management as to avoid crashes incase of api connection errors 
+
+    Note: catch should be written as along with try - must, otherwise error
+
+    //we can also print error message by taking (err) as argument in catch & print err.
+
+
+~~Miscellaneous topics
+
+# Arrow Functions
+    const varName=(arg1,arg2) => {function definition}         //like function expressions, without using function keyword  & a arrow =>
+
+    Note: even incase of no parameters, parantheses is must
+
+
+# implicit return
+    when we have to do only one work , we don't need to return it explicitly (using return keyword)
+
+    const varName=(arg1,arg2) => (value)
+
+
+# Set timeout
+    function of a window object       //set time for certain action to be done in how much time
+
+    setTimeout(function,timeout)      //function - callback (a function being passed as argument)  //timeout in ms
+
+
+# Set interval
+    setInterval(function, timeout );         //syntax just like setTimeout
+
+    difference is that: set timeout waits for specified time and then execute, whereas setInterval makes wait for specified time, and then execute, then again wait & execute and so on.
+
+
+    clearInterval(id)     //stops the repeated process, //let id=setTimeout should be done when declaring setTimeout
+
+
+# this with arrow Functions 
+    for functions, scope is the calling object     //obj.func 
+
+    for array functions, scope is lexical somewhat -// parent scope    //eg-- student.getName  //will do as per scope of getName's parent
+
+
+    //For setTimeout defined with normal function in callback, this will correspond to window object (calling object)
+    //For setTimeout defined with arrow function in as callback, this will correspond to student object (parent scope)
+
+    
+
+    
