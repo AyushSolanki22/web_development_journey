@@ -60,5 +60,4 @@
     //For setTimeout defined with arrow function in as callback, this will correspond to student object (parent scope)
 
     
-
-    
+# Practice Qs
