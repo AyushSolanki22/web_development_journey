@@ -1,0 +1,122 @@
+# Array Methods
+    -- methods using callbacks as input
+        -- forEach, map, filter, some, every, reduce
+           all methods are traversing through and using all element , ele should be passed as argument in function
+
+    -forEach
+            this forEach is the method of array traversing through & pass all elements to function.
+            arr.forEach(funcName )   OR   arr.forEach(some func definition)
+
+
+# Map & filter
+    --Map
+        //is same as forEach like traversing & performing function on all elements, just return all returned output to a new array of same size.
+
+        let newArr=arr.map(some function definition)    OR    let newArr=arr.map(function)
+    
+    --filter
+        let newArr=arr.filter(function OR some function definition)        
+        
+        //same like map , just it adds or not, depends on the condition placed in callback //if condition true-> add, otherwise not.
+
+    
+# Every & sum
+    -Every
+        arr.every(some function definition  OR  function)
+        returns true if every element of array gives true for some function. Else returns false
+
+    -some
+        arr.some(some function definition  OR  function)
+        returns true if some elements of array gives true for some function. Else returns false
+
+
+# reduce method
+    reduces the array to a single value
+
+    arr.reduce(reducer function with 2 variables for (accumulator, element));
+
+    //accumulator concept 
+    //array sum logic possible using this and a lot of array questions
+
+
+# find max using reduce
+    let result=arr.reduce((max,ele)=>{
+        if(ele>max){
+            return ele;
+        }
+        else{
+            return max;
+        }
+    })
+
+
+# Default parameters
+    giving a default value to the parameters
+    function sum(a,b=2){     //default value to b
+
+    }
+
+
+# Spread
+    expands an iterable into multiple values  (when we have to spread iterable and check on each individual value ..eg-- array is iterable)
+
+    function func(...arr){
+        //to do something                          //eg-- Math.min(...arr); OR   console.log(...arr);   or otherwise we have to specify all elements in the argument 
+    }
+
+
+    //spread helps in passing each individual element to the function
+
+
+# Spread (Array Literals)
+    we can easily copy a array using spread & also add other elements, by passing each and every individual array element
+
+    let newArr=[...arr];       //deep copy too
+    let newArr=[...arr, 1,2,3]
+
+# Spread (Object Literals)
+    we can easily copy a object using spread & also add other properties too, by passing each and every individual array element
+
+    const data={
+        email: "xyz";
+        password: "abcd";
+    };
+    const datacopy={...data, id:123};
+
+
+    //we can also spread array,string using object literal    //indexes will be the keys
+
+
+# Rest
+    --concept is directly opposite to that of spread   --- it takes a lot of individual elements and combine them
+
+    allows a function to take an indefinite no. of arguments and bundle them in array
+
+    (((((argument named collection)))))
+
+    function sum(...args){   //args-- arguments     //we will collect items as a array
+        return args.reduce( (sum,el)=> sum+el );        //.reduce ***
+    }
+
+    //if we want to take extra arguments, we can take it along with arguments  -- function sum(msg, ...args)
+
+
+# Destructuring
+    storing values of array into multiple variables
+
+    let names=["tony","bruce","steve","peter"];
+    let [winner, runnerup]=names;
+    console.log(winner,runnerup);   //"tony" "bruce"   //assigning by index
+
+    //we can also combine rest+Destructuring concepts --- let [winner, runnerup, ...others]=names;
+
+
+# Destructuring (object)
+    we can store value of with respect to key to the variables
+
+    //it searches the key introduced in Destructuring and then assigns the value to the variables
+
+    let{key:user , key2:password}=obj;  OR //we can just use keys 
+
+
+    //suppose like if no some property exist in the object, we can make some default value & assign it.     let{ city="delhi"}=obj;  //working as by default
