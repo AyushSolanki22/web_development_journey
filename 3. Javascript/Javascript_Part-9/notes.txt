@@ -129,7 +129,7 @@
 
 # Removing elements from Page
     removeChild    //works similarly to appendChild
-
+    
     obj.remove();   //remove the object 
 
 
