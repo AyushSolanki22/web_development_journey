@@ -1,0 +1,144 @@
+# Intro 
+    index.html, style.css code here is used here for practice..
+
+    -- use of html, css (structure, styling) as well as javascript (logic, functionality)
+
+    DOM (Document Object Model)
+        The DOM represents a Document with a logical tree.    -- showing the heirarchial structure of html, css while linking with javascript
+        it allows us to manipulate/change webpage content (HTML elements).
+
+
+# DOM
+    circles seen in DOM--> known as node,, each & every single node are objects of javascript
+
+    all the html, css code is accessible in the form of Document node , and this node is actually a object of js.
+
+
+    //document is a object, similar to like that of window being a object   //Thus, on console, all html code considered under document in DOM , will be seen
+    //Through, console.dir(document) --> we can actually see properties of document as object  (not its content)
+
+
+# Exploring
+    The work of selecting a object (for eg-- img, paragraph), changes/manipulation is a work(2-step process) of javascript used in DOM.
+
+    (all) property of document -- defines all html collections & their own properties too  (h1, img, a , p, body, head, and all)
+    console.dir(document.all);
+
+    //to access the elements of document at a index (html collections)--> console.dir(document.all[8]) - is like used to see h1, and its properties
+    ((collections are slightly similar to array))
+
+
+# Selecting elements
+    getElementById
+        -returns the Element (finding by id) as an object or null (if not found)   
+    
+    let imgObj= document.getElementById("mainImg");   //then we can see many properties of the image too , like imgObj.src, imgObj.tagName
+
+
+# Selecting elements
+    getElementByClassName
+        -returns the Elements as an HTML collection or empty collection (if not found)      //Note: what is returned is collection similar to array
+
+    can also access elements at indexes in html collection -> document.getElementByClassName("card")[0];
+
+
+# Selecting elements
+    getElementByTagName
+        -returns the Elements as an HTML collection or empty collection (if not found)      //Note: what is returned is collection similar to array
+
+    
+
+# Query Selectors
+    allows us to use any CSS Selector,,, it is frequently used 
+
+    document.querySelector('p');  //selects first p element
+    document.querySelector('#myId');   //selects first element with id=myId
+    document.querySelector('.myClass');  //selects first element with class=myClass    //Remember - selects first element
+
+    document.querySelectorAll("p");   //selects all p elements with a dataType = NodeList  (accessible like array)
+
+    //can just write all css selector queries here,  (eg-- div a)
+
+
+# Setting content in object
+    accessing content 
+
+    using properties & methods
+        -innerText
+            shows the visible text conntained in a node
+            //it takes the textual content from the text being displayed         Note: text set to display:none willn't be displayed
+
+        -textContent
+            shows all the full text (hidden -- newline,tab characters )  Note: there are implicit newline characters shown here as according to the way text is written.
+            //it takes the textual content from HTML file.
+
+        -innerHTML
+            shows the full markup    (all tags, inside elements displayed)
+    let para=document.querySelector("p");
+    p.innerText=" "  OR  p.textContent  OR  p.innerHTML
+
+    p.innerHTML=`<u>${heading.innerText}</u>`
+
+
+# Manipulating attributes
+
+    //Getters & Setters
+    obj.getAttribute(attr);     //gets the attribute of a specific object    -- id, class, src are all attributes
+    obj.setAttribute(attr,val);    //sets the attribute to a value of a specific object   //for class, a object can then have only one class , so advised not to use much
+
+
+# Manipulating style  (using style attribute)
+    obj.style
+
+    eg-- para.style.color='purple';    para.style.borderRadius="100%";
+    Note: like in CSS, it is background-img (with hyphen), , in JS, the name is in camelCase. - backgroundImage
+
+    Note: we can only access/manipulate inline styling with style attribute,, so it is not frequently used
+
+
+# classList Property
+    //using classList
+    obj.classList   //we can see all classes associated with the Object
+
+    classList.add()       to add new classes
+    classList.remove()    to remove classes
+    classList.contains()  to check if class contains " "
+    classList.toggle()    to toggle between add & remove     //toggle like a switch   //it return the work it did , if add- true, if remoce - false
+
+    Note: this can be used for like for some classes styling defined in style.css appliance can be varied by associating or not associating object with the class
+
+
+# Navigation on Page
+    obj.parentElement   //gives parent element of the obj
+    obj.children  //returns HTML collection with child elements     obj.childElementCount //returns count of children
+    obj.previousElementSibling / nextElementSibling
+
+    
+# Adding elements on Page
+    let newP=document.createElement('p');    //to insert/add element in a javascript, in a document object,,, but it's not displayed/reflected on html Page
+
+    //so we have also to insert element in a html file using following methods , after creation
+    appendChild(element) 
+
+    let body=document.querySelector('body');
+    body.appendChild(newP);
+
+    //also to append string, text
+    append(element) --add to last,,,, prepend(element) --add to starting/beginning,,,, insertAdjacentElement(position, element) //4 types of position - 'beforebegin', 'afterbegin', 'beforeend', 'afterend'
+
+
+# Removing elements from Page
+    removeChild    //works similarly to appendChild
+
+    obj.remove();   //remove the object 
+
+
+# practice 
+
+
+
+
+
+
+
+
