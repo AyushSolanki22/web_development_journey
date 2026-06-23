@@ -1,0 +1,42 @@
+# Event Bubbling
+    this is a case in nested elements
+
+    Basically, when a nested element - event Listener is triggered ,, it also triggers parents'(ancestors) event Listeners too.    eg-- div>ul>li
+
+
+    to avoid bubbling, we should include   event.stopPropagation() to stop stop propagation of triggering of all event Listener
+
+
+# todo App
+    see files
+    just one error, that delBtn was not working as desired for newly created list items
+
+# Event delegation
+    if we create newelement of certain type, and if we have already create event listener for that type of elements , so that same event listeners will not work for new ones
+    eg--- todo app, delBtn event listeners were not applicable on new delete btns created in new list items
+
+    it is the phenomena of using event bubbling to make event listeners applicable on newly created items (child)
+    So instead of adding event listeners to delBtn, we can add it to parent - ul or li
+
+    Now, only ONE listener exists. Every click inside the UL eventually reaches UL.
+
+
+    Note: event.target gives which element triggered event Listener ,, event.target.nodeName gives the element type name in capital letters
+
+
+# Simon Game- how to play
+    just remember sequence and do click according ot sequence
+
+# Setting up -- layout
+
+# game
+    1. keypress--> game start
+    2. btn flash+level 1
+
+    //we will track game sequence, user sequence
+    3. button press --> button event listeners
+    4. comparing user sequence, game sequence if aligning or Note
+    4. if full sequence same --> level up , otherwise game error
+
+
+
