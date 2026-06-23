@@ -1,0 +1,72 @@
+# DOM Events
+    Events are signals that something has occurred. (user inputs/actions)
+
+    inline events -- onclick attribute(inline) -- can do any multiple desired work    //inline javascript coding is possible in html similar to css
+    //somewhat, inline events handling is not good practice though as it makes it lengthy, complex, less readable in a html file 
+
+
+# Mouse_Pointer events
+    onclick (when an event is clicked)
+
+    onmouseenter (when mouse enters an element)
+
+
+    Note: when using DOM Events explicitly through js file--> onclick, onmouseenter, and all expects a function reference
+    //There are lot of other DOM events 
+
+# Event Listener
+    As onclick like attribute can have only one value at a time - only one  ,,,,    //eg-- only one function name
+
+    element.addEventListener(event,callback)    //function as in callback
+
+
+    to assign multiple values,  -- addEventListener  --> button.addEventListener("click",sayHello);  button.addEventListener("click",sayName);
+    //on event, all functions assigned will be executed
+
+    //eg
+    btn.addEventListener("click",function(){       
+        console.log("button clicked");
+    });
+
+
+    //event Listener are applicable on all elements - like p, div
+
+
+# Activity
+    on tapping generate color button,  color is displayed on div & rgb value is displayed on heading
+
+
+# this in Event Listener
+    when 'this' is used in callback of event handler of something, it refers to that something
+        Event listener for the object it is created, this in callback refers to that object
+
+    //main application -- change of color for multiple objects on click--> to avoid writing obj.style.color(p,h,div,& many) for every individual element, we can write this.style.color
+
+
+# Keyboard events
+    keydown (fired when a key is pressed) ,,, keypress (fired when a key that produces a character is pressed down) ,,, keyup (fired when a key is released)
+
+    the Keyboard event have two imp. properties --- key (contains text what is written by through keyboard - what is being displayed) , code (a code corresponding to key. eg-- 'Space', 'keyA')
+
+
+# Form events
+    we can access/handle various form events like submit and all
+
+    and like as we submit , we get directed to url (this is default event-action for when we submit form, default for submit event),,, 
+    to avoid default events --> event.preventDefault()
+
+
+# Extracting Form data
+    see app.js
+
+
+# More Events   
+    change event
+        the change event occurs when the value of an element has been changed (only works on <input>, <textarea>, and <select> elements).   //Note: it only tracks change between initial, final state (after removing focus from input),, means it will not be fired on each individual typing
+
+    input event
+        the input event fires when the value of an <input>, <select> , or <textarea> element has been changed.  Note: this fires for every individual char change
+
+    
+    can create text editor -- using input event, p , input objects
+
