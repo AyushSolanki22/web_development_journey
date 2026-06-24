@@ -1,0 +1,64 @@
+# JS Call Stack 
+    Stack, LIFO 
+
+# Visualising call stack
+
+# Breakpoints
+    We can track Call Stack in a browser only , using Breakpoints
+
+    We can create Breakpoints on a line to see how that line will going to be executed ,,,,,also useful in debugging
+
+    Adding Breakpoint, handling, seeing call stack for tracking using steps into next, prev func calls,  is possible on sources section on inspect window
+
+
+# JS is single threaded
+    //it signifies that at a time-- js perform one work only at once .   (execution line by line,  not all line at once)   //synchronous nature of js
+
+    to avoid consequence of nature of js of being single thread which can affect work incase of delay in fetching data from api or storing data in dbms,
+    solns are worked out -- like callbacks, setTimeout  //asynchronous nature of js
+
+    Note: setTimeout work is given to browser & browser after delay time, delivers the work to js callstack to be executed--- browser is multi-threaded (somewhat of C++ language)
+
+
+# Callback hell
+    the problem which comes with asynchronous nature of js is callback hell
+
+    eg-- callbacks nesting for changing color, all for at difference in delay of 1s   -- confusing code --- phenomena of callback hell 
+
+
+    to avoid callback hell -- promises, awake & async type keywords are used
+
+
+# Setting up for promises
+    see app.js
+
+    for this problems as observed in app.js (callback hell), we come up with promises
+
+
+# Refactoring with promises
+    the Promise object represents the eventual completition (or failure) of an asynchronous operation and its resulting value.
+ 
+    So, in promise object, we have 2 things : resolve (success wala callback) & reject (failure wala callback)
+
+    see app.js
+
+
+    Promise object--> prototype: Promise,, state: fulfilled/rejected (error)/pending
+
+
+# then() & catch() methods
+    if we want some work done after state of promise being fulfilled (success)--> if the promise already fulfilled, we use .then() 
+
+    and if we want some work done incase of promise being rejected & also to avoid error --> if promise already rejected, we use .catch()
+
+
+# Promise chaining
+    using multiple promises & thus multiple then , but single catch only ...        (generally , we use single catch only)
+
+
+# Results_Errors in promises
+    promises are either rejected or resolved with some data (valid results or errors)
+
+
+# Change color program using promise now
+    see app.js
