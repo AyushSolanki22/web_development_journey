@@ -1,0 +1,131 @@
+# async Functions
+    async Functions offers more cleaner, compact, readable code/approach for asynchronous tasks
+    All Async function by default always returns a promise
+
+    async & await keywords **
+    async keyword -->   creates an Async function
+
+    async function greet(){
+        return "hello world";   //returns a promise with result="hello world":                
+    }
+
+    OR
+
+    let hello=async()=>{};  //this create a function which returns a promise with result: undefined //hello (variable can store anything) here contains a reference to a function object. //Arrow functions**  //need: hello()  -- executes the function stored inside hello.
+
+
+    //to throw error explicitly , we can use throw keyword... (rhrow "  ";)
+
+
+# await keyword
+    pauses the execution of its surrounding async function until the promise is settled (resolved or rejected).  
+    
+    //necessary in a condition when we want a call to be placed one by one only. (not if one is pending(like by setTimeout), and other is called)
+
+
+# Handling rejections
+    when like rejection occurs incase,,,, arguments/lines next to line because of which error/rejection occured doesn't get executed
+
+    So we use try, catch to handle rejection (errors)
+
+
+# API
+    concept, we will use to fetch some raw data to webpage to change some specific data only  -- like for eg, in insta , when we like, only no. of likes get change 
+
+    API -- Application Programming Interface  ,,, 
+
+    request, response cycle ( think of api to be waiter as an example -- request from user/client, back response to client,, fetch work is of background, as various apis are of servers only (links (endpoint)))
+    These are generally called web APIs
+    the data they give in response is in the form of JSON
+
+
+    As there are also APIs which are used in for interaction between softwares
+
+
+# Accessing some APIs
+    generally , api endpoints (url) is norma; (no key(password), unpaid)      //for key, we have to be a user of url
+
+    free APIs
+    https://catfact.ninja/fact/
+    https://bored-api.appbrewery.com/random
+    https://dog.ceo/api/breeds/image/random
+
+    we have many more APIs -- of google, instagram, telegram, google maps   (see documentation to understand api uses)
+
+
+# JSON
+    Javascript Object notation   www.json.org     
+
+    JSON is basically a format , web APIs returning data is generally in form of JSON (previously, it was in XML format)
+
+
+    generally, JSON is like similar to JS Objects (has key-value pairs), just difference being that keys are in string form only (otherwise, error) & there is no undefined in JSON
+
+    to check if JSON code is correct or not -- use json validators
+
+
+# Accessing JSON data
+    As JSON data is basically in the form of strings
+
+    --JSON.parse(data) Method              //this is used generally basically as api returns data in the form of string data only, but as string keys are not accessible
+        to parse a string data(JSON) into a JS object  
+
+    --JSON.stringify(json) Method    //generally used when we make our own APIs
+        to parse a Js object data into JSON
+
+
+# API Testing Tools
+    testing api requests ---> using tools such as  Hoppscoth, Postman       (to use Postman, we have to download it & signup) (both are identical in use, interface and api requests)
+
+
+# AJAX
+    Asynchronous Javascript and XML  --- previously as reponse was in form XML , and it took time for to get response (it was asynchronous process)
+
+    So , API calls are AJAX calls  ,,,, now tho return data is in the form of JSON, but still we call calls AJAX (familiar, from starting)
+
+
+# https verbs
+    examples : GET, POST, DELETE         ,,,, verbs-- works/action,,,, we will deal with GET somewhat, we will be using others when we will be dealing with server side (when we will create own APIs)
+
+
+# Status codes
+    200- OK ,,, 404- Not Found ,,, 400- Bad Request ,,, 500- Internal Server Error ,,, many others
+
+ 
+# Add information in urls
+    (assume like google url is api, when we search, additional info comes in urls --> a key-value pair)
+
+    https://www.google.com/search?q=harry+potter                
+
+    ?name=ayush&marks=97    --- two key-value pair
+
+
+    conceptual understanding of accessing api, api routes, adding info through api associated with harry potter movies,books, etc. using Hoppscoth --- https://api.potterdb.com 
+    (in url, ending with url/:id OR :num OR :q OR {{id}} OR <id>  --> these signifies these are variables that are to be replace by specific data) 
+
+
+    https://universities.hipolabs.com/search?name=India   --- provides info of all universities domain with country=India  ((the main website provides all universities domain list))
+
+    Note: if we enter a key-value pair randomly, url ignore it by the way, and loads what it recognizes
+
+
+# https headers
+    used for providing additional info in to request, responses..     ((not in url, but as in headers having header, value pairs))
+
+    request headers -- sends lot of additional data (like mobile, model, platform, user-agent and other meta-data) -- we can see request headers in network section in inspect feature.
+
+
+    practical eg -- dad jokes api ---- we can apply headers in Hoppscoth when writing url infor GET
+    (header,value) => (Accept,application/json) will give JSON Response  (this is response header though)                ((api response format of dad jokes api))
+    (Accept, text/plain)  will give plain text in response
+
+
+# first api request
+    using fetch ----- fetch(url)  this automatically send request to on this url endpoint        //it returns promise by default
+        (previously we used XMLHTTPRequestObj - which didn't allow use of async, await)
+    
+    see api.html, api.js
+
+    
+# using fetch with async, await
+    
