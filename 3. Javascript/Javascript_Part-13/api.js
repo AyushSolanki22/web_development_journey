@@ -1,4 +1,4 @@
-let url="https://catfact.ninja/fact/ ";
+let url="https://catfact.ninja/fact/ ";         //remember url must be in string format
 
 // fetch(url)  //the fetch returns a promise by default
 // .then((response)=>{
