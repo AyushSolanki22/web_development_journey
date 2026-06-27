@@ -1,0 +1,33 @@
+# Using axios
+    Axios -- Library to make https requests    ....  axios.get(url)
+
+    till now, we have talked of, used fetch method. Axios also internally use fetch, but it's more compact, better method to send requests  (know more online -- axios github)
+    we can either download to use it OR use cdn link to access it (before app.js)  <script src="https://cdn.jsdelivr.net/npm/axios@1.13.2/dist/axios.min.js"></script>
+
+    we can see different different axios methods in documentation   //axios also returns promise by default
+    Why axios then? -- the returning form of fetch was not in the form of JSON, we had to parse it everytime,,, by axios, the returned data is in the form of JSON only
+
+
+    used html+js for getting facts ---- see index.html, app.js
+
+
+# DogPictures API
+    see index2.html,  app2.js
+
+
+    Note: you should not misuse apis (like on loops and all) that can lead to account blocking or errors or crash 
+
+
+# Sending headers with API requests
+    
+    const config={headers: {Accept: "application/json"} } ;
+    let res=await axios.get(url2, config);                //res.data is in the form of html besically but as sending headers will lead to response now in JSON
+    console.log(res.data); 
+
+
+# Activity using query strings
+    ?name=nepal   --- query string
+
+    Activity of with universities.hipolabs.com , using query strings
+
+    
