@@ -1,0 +1,19 @@
+
+
+
+input{
+  width: 100%;
+}
+
+.items-container{
+  text-align: left;
+}
+
+.kg-row{  
+  margin: 10px 0;
+  align-items: center;
+}
+
+.kg-button{
+  min-width: 80px;
+}
