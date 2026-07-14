@@ -1,6 +1,8 @@
+const addition=require('./addition')
+
 const handleRequest = (req, res) => {
   console.log(req.url, req.method);
-  res.setHeader("Content-type", "text.html");
+  res.setHeader("Content-type", "text/html");
   res.write("<html>");
   res.write("<head><title>Calculator</title></head>");
   if (req.url === "/calculator") {
@@ -14,12 +16,13 @@ const handleRequest = (req, res) => {
       '<br><input type="number" name="b" placeholder="Enter number 2: ">',
     );
     res.write("<br><br><button type='submit'>Sum</button>");
-    res.write("</form");
+    res.write("</form>");
     res.write("</body>");
     res.write("</html>");
     return res.end();
-    res.end();
-  } else if (req.url === "/calculate-result" && req.method === "POST") {
+
+  } 
+  else if (req.url === "/calculate-result" && req.method === "POST") {
     const body = [];
     req.on("data", (chunk) => {
       body.push(chunk);
@@ -31,15 +34,23 @@ const handleRequest = (req, res) => {
       const params=new URLSearchParams(fullBody)
       const bodyObject=Object.fromEntries(params)
       console.log(bodyObject)
+      const sum=addition(Number(bodyObject.a),Number(bodyObject.b))
+      
+      res.write('<h1>Result</h1>')
+      res.write(`<p>Sum: ${sum}</p>`)
+      res.write('</html>')
+      res.end(``)
     });
+    return 
   }
-
-  res.write("<body>");
-  res.write("<p>Welcome</p>");
-  res.write('<br></br> <a href="/calculator">Go to Calculator</a>');
-  res.write("</body>");
-  res.write("</html>");
-  res.end();
+  
+    res.write("<body>");
+    res.write("<h1>Welcome to Calculator</h1>");
+    res.write('<br></br> <a href="/calculator">Go to Calculator</a>');
+    res.write("</body>");
+    res.write("</html>");
+    res.end();
+  
 };
 
 module.exports = handleRequest;
