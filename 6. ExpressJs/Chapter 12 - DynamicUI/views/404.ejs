@@ -1,29 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>404 - Page Not Found</title>
-
-  <link rel="stylesheet" href="/output.css">
+<%- include('partials/head') %>
 </head>
 
 <body class="bg-gray-100">
 
-  <!-- Navbar -->
-  <nav class="bg-red-500 text-white shadow-md">
-    <div class="max-w-6xl mx-auto flex gap-6 p-4">
-
-      <a href="/" class="font-medium hover:text-gray-200">
-        Go to Home
-      </a>
-
-      <a href="/host/add-home" class="font-medium hover:text-gray-200">
-        Add Home
-      </a>
-
-    </div>
-  </nav>
+  <%- include('partials/header') %>
 
   <!-- 404 Card -->
   <div class="flex justify-center mt-16">

@@ -5,7 +5,7 @@ const express = require("express");
 const hostRouter = express.Router();
 
 hostRouter.get("/add-home", (req, res, next) => {
-  res.sendFile(path.join(rootDir, "views", "add-home.html"));
+  res.render('add-home',{pageTitle: 'Add Home'})
 });
 
 const registeredHomes = [];
@@ -14,7 +14,7 @@ hostRouter.post("/add-home", (req, res, next) => {
   console.log("Home Registration sucessful for:", req.body.houseName);
 
   registeredHomes.push({ houseName: req.body.houseName });
-  res.sendFile(path.join(rootDir, "views", "add-succeed.html"));
+  res.render('add-succeed',{pageTitle: 'Add Home : Sucecess'})
 });
 
 exports.hostRouter = hostRouter;
