@@ -1,0 +1,55 @@
+<%- include('../partials/head') %>
+  </head>
+
+  <body class="bg-gray-100">
+    
+    <%- include('../partials/header') %>
+
+    <div class="max-w-xl mx-auto mt-12">
+      <div class="bg-white shadow-lg rounded-md p-8">
+        <h1 class="text-3xl font-bold text-center mb-8">
+          Register Your Home on AirBnB
+        </h1>
+
+        <form action="/host/add-home" method="POST">
+          <input
+            class="border w-full p-3 rounded mb-4"
+            type="text"
+             name="houseName"
+            placeholder="Enter your Home Name"
+          />
+          <input
+            class="border w-full p-3 rounded mb-4"
+            type="text"
+            name="housePrice"
+            placeholder="Enter Home Price per night"
+          />
+          <input
+            class="border w-full p-3 rounded mb-4"
+            type="text"
+            name="houseLocation"
+            placeholder="Enter your Home Location"
+          />
+          <input
+            class="border w-full p-3 rounded mb-4"
+            type="text"
+            name="houseRating"
+            placeholder="Enter Home Rating"
+          />
+          <input
+            class="border w-full p-3 rounded mb-4"
+            type="text"
+            name="photoUrl"
+            placeholder="Enter Photo Url"
+          />
+
+          <button
+            class="w-full bg-red-500 hover:bg-red-600 text-white py-3 rounded font-semibold"
+          >
+            Submit
+          </button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
