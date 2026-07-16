@@ -12,14 +12,18 @@ app.use((req, res, next) => {
   next();
 });
 
+app.use(express.static(path.join(rootDir,"public")))
+
 app.use(express.urlencoded());
 
 app.use(userRouter)
 
 app.use("/host",hostRouter)
 
+app.use((req, res) => {       //404 error for wrong url 
+  res.status(404).sendFile(path.join(rootDir,'views','404.html'));
+});
 
-app.use(express.static(path.join(rootDir,"public")))
 
 const PORT = 3000;
 app.listen(PORT, () => {
