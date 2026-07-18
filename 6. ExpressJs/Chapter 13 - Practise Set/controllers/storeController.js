@@ -2,7 +2,7 @@ const Home = require("../models/home");
 
 exports.getHomes = (req, res, next) => {
   //this all to handle async function problem
-  const registeredHomes = Home.fetchAll((registeredHomes) => {
+  Home.fetchAll((registeredHomes) => {
     res.render("store/home-list", {
       registeredHomes: registeredHomes,
       pageTitle: "Homes",
@@ -12,7 +12,7 @@ exports.getHomes = (req, res, next) => {
 };
 
 exports.getIndex = (req, res, next) => {
-  const registeredHomes = Home.fetchAll((registeredHomes) => {
+  Home.fetchAll((registeredHomes) => {
     res.render("store/index", {
       registeredHomes: registeredHomes,
       pageTitle: "Home Page",
@@ -30,7 +30,7 @@ exports.getBookings = (req, res, next) => {
 };
 
 exports.getFavourites = (req, res, next) => {
-  const registeredHomes = Home.fetchAll((registeredHomes) => {
+  Home.fetchAll((registeredHomes) => {
     res.render("store/favourite-list", {
       registeredHomes: registeredHomes,
       pageTitle: "My Favourites",
